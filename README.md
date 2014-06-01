@@ -18,15 +18,15 @@ If the timer is left in the ready/waiting state for too long it returns to the l
 ATtiny85 pin assignments 
 ------------------------
 (legs numbered 1..8 counterclockwise from leg marked with dot)
- Leg  Function
- 1    Reset, pull-up resistor to 5V and weatherproof switch to GND
- 2    D3 LED #4 (10mm red)
- 3    D4 piezo buzzer
- 4    GND
- 5    D0 LED #1 (10mm green)
- 6    D1 LED #2 (10mm green)
- 7    D2 LED #3 (10mm green)
- 8    +5V
+
+1. Reset, pull-up resistor to 5V and weatherproof switch to GND
+2. D3 LED #4 (10mm red)
+3. D4 piezo buzzer
+4. GND
+5. D0 LED #1 (10mm green)
+6. D1 LED #2 (10mm green)
+7. D2 LED #3 (10mm green)
+8. +5V
 
 Code
 ----
@@ -39,17 +39,19 @@ Tested installation
 To avoid requiring a voltage regulator the test version uses 4x rechargeable AAA cells in series to provide 4.8V supply voltage max.  This has proven to give several months of use in a bathroom shared by 4 boys between charges.
 
 BoM as tested:
-	1x ATtiny85-20PU
-	1x 8 pin DIP IC Socket (optional)
-	3x 10mm green diffused LED
-	1x 10mm red diffused LED
-	5x 330 Ohm resistors (current limiting, for LEDs & MOSFET)
-	4x 10mm plastic LED holders, aluminium enclosure
-	1x 0.1uF ceramic capacitor (decoupling)
-	1x piezo buzzer
-	1x 2N7000 MOSFET drives piezo
-	1x 1M resistor (pulldown for MOSFET)
-	2x dual AAA battery pack
-	1x weatherproof IP65 momentary push button switch
+
+- 1x ATtiny85-20PU
+- 1x 8 pin DIP IC Socket (optional)
+- 3x 10mm green diffused LED
+- 1x 10mm red diffused LED
+- 5x 330 Ohm resistors (current limiting, for LEDs & MOSFET)
+- 1x 1k Ohm resistor (reset pull-up)
+- 4x 10mm plastic LED holders, aluminium enclosure
+- 1x 0.1uF ceramic capacitor (decoupling)
+- 1x piezo buzzer
+- 1x 2N7000 MOSFET drives piezo
+- 1x 1M resistor (pulldown for MOSFET)
+- 2x dual AAA battery pack
+- 1x weatherproof IP65 momentary push button switch
 
 Be sure to choose current limiting resistors to suit the particular LEDs you select.
